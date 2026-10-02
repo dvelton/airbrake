@@ -1,0 +1,18 @@
+{
+  "description": "Require an active Airbrake operator lease before local tool execution.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/airbrake\" hook",
+            "timeout": 2,
+            "statusMessage": "airbrake-presence-gate"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+'use strict';
+
+const VERSION = '0.1.0';
+const DEFAULT_LEASE_MS = 350;
+const DEFAULT_HEARTBEAT_MS = 100;
+const MIN_LEASE_MS = 300;
+const MAX_LEASE_MS = 5000;
+
+module.exports = {
+  DEFAULT_HEARTBEAT_MS,
+  DEFAULT_LEASE_MS,
+  MAX_LEASE_MS,
+  MIN_LEASE_MS,
+  VERSION,
+};

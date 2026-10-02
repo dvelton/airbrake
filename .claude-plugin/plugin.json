@@ -1,0 +1,8 @@
+{
+  "name": "airbrake",
+  "version": "0.1.0",
+  "description": "Proof-of-concept hold-to-run control for local coding agents.",
+  "author": {
+    "name": "Dan Velton"
+  }
+}
